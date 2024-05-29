@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
                 <div class="nav-links">
@@ -98,7 +98,8 @@
         </section>
         <section id="contact" class="contact">
             <h2>Let's Connect</h2>
-            <p>I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or not, I'll try my best to get back to you!<br>Find me at <i>nkerubo.angela@gmail.com</i></p>
+            <p>I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or not, I'll try my best to get back to you!
+                <br>Find me at <a href="#contact" class="smooth-scroll">nkerubo.angela@gmail.com</a></p>
             <form>
                 <label for="email">Your Email</label>
                 <input type="email" id="email" name="email" required>
@@ -113,10 +114,10 @@
     <footer>
         <p>@2024 All rights reserved</p>
         <nav>
-            <a href="">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">My Work</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#header" class="smooth-scroll">Home</a>
+            <a href="#about" class="smooth-scroll">About Me</a>
+            <a href="#projects" class="smooth-scroll">My Work</a>
+            <a href="#contact" class="smooth-scroll">Contact Me</a>
         </nav>
         <div class="social-links">
             <a href="https://github.com/Angela-Kerubo">GitHub</a>
