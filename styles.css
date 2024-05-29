@@ -4,7 +4,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #ccc;
 }
-
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
 header {
     background-color: #000;
     color: white;
@@ -17,7 +23,8 @@ header h1 {
     margin: 0;
     font-size: 60px;
     color: #c62c90; 
-    margin-bottom: 20px;  
+    margin-bottom: 20px; 
+    margin-top: 60px; 
 }
 header p {
     font-size: 21px;
@@ -72,8 +79,6 @@ video::media-controls {
 .nav-links ul li:hover::after{
   width: 100%;
 }
-
-
 
 .btn {
     display: inline-block;
