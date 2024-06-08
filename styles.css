@@ -113,8 +113,7 @@ main {
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
-  background-image: url("https://cdn.pixabay.com/photo/2016/12/26/13/16/backgrounds-1932042_1280.jpg");
-  background-attachment: fixed;
+  background-color: #321414;
 }
 
 section {
@@ -247,7 +246,8 @@ form button:hover {
   font-weight: bold;
 }
 footer {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_1280.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_1280.jpg");
   background-attachment: fixed;
   color: white;
   padding: 20px 0;
