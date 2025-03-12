@@ -1,159 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header id="header">
-            <div class="navbar">
-                <nav>
-                    <a href="#" class="toggle-button">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </a>
-                    <div class="nav-links">
-                        <ul>
-                            <li><a href>HOME</a></li>
-                            <li><a href="#about" class="smooth-scroll">ABOUT
-                                    ME</a></li>
-                            <li><a href="#projects" class="smooth-scroll">MY
-                                    WORK</a></li>
-                            <li><a href="#contact" class="smooth-scroll">CONTACT
-                                    ME</a></li>
-                        </ul>
-                        <br>
-                    </div>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela Kerubo | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">AK</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <h1>Hello There...👋<br> I'm Angela Kerubo</h1>
-            <p><i>A Front-End Software Developer</i></p>
-            <a href="https://linktr.ee/angelakerubo" class="btn">HIRE ME</a>
-            <a href="https://angela-kerubo.tiiny.site" class="btn">DOWNLOAD
-                CV</a>
-        </header>
+        </nav>
+    </header>
 
-        <main>
-            <section id="about" class="about-me">
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight">Angela Kerubo</span></h1>
+                <h2>Software Developer</h2>
+                <p>I build exceptional digital experiences that make life easier and more enjoyable.</p>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/angela-kerubo" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/angela-kerubo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:angelakerubo2@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image-container">
+                    <!-- You'll need to add your profile image to the project -->
+                    <img src="profile-image.jpg" alt="Angela Kerubo" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
                 <h2>About Me</h2>
-                <p>As a Software Developer, I have expertise with a variety of
-                    technologies and programming languages to plan, create, and
-                    build applications and solutions, attempting to make use of
-                    extensive development expertise and practical technical
-                    skills as a Software Developer in a demanding position.</p>
-            </section>
-            <section id="projects" class="projects">
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Software Developer with a focus on creating elegant, efficient solutions to complex problems. With a background in Computer Science from Egerton University, I blend technical expertise with creative problem-solving.</p>
+                    <p>My journey into software development began with a curiosity about how digital tools shape our world. This curiosity has evolved into a career devoted to building applications that enhance user experiences.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers.</p>
+                    <div class="personal-details">
+                        <div class="detail">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Name:</strong> Angela Kerubo</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> angelakerubo2@gmail.com</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Location:</strong> Nairobi, Kenya</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>Education:</strong> BSc. Computer Science, Egerton University</span>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" class="btn primary-btn" target="_blank">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <h4>Node.js</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <h4>REST APIs</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <h4>Docker</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <h4>AWS</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <h4>Command Line</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-header">
                 <h2>My Projects</h2>
-                <div class="stats">
-                    <div class="stat"
-                        style="background-image: url('https://i.postimg.cc/sDNbtp8Y/Screenshot-42.png'); background-position: center;">
-                        <button type="button"><a
-                                href="https://github.com/Angela-Kerubo/CodeHub-Website">View
-                                Code</a></button>
+                <div class="underline"></div>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="project1.jpg" alt="TuKonnect Social Platform">
                     </div>
-                    <div class="stat"
-                        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('https://i.postimg.cc/TP0rycnF/2024-02-18-1.png'); background-position: right;">
-                        <button type="button"><a
-                                href="https://github.com/Angela-Kerubo/themarkhotel">View
-                                Code</a></button>
+                    <div class="portfolio-info">
+                        <h3>TuKonnect Social Platform</h3>
+                        <p>A social networking platform for university students to connect, share resources, and collaborate on projects.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/angela-kerubo/tukonnect" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="certifications" class="certifications">
-                <h2>My certifications</h2>
-                <div class="stats">
-                    <div class="stat2">
-                        <h3><a
-                                href="https://www.freecodecamp.org/certification/fccf90d8e8f-e297-4378-bfea-fcf2aab0df64/front-end-development-libraries">Front
-                                End Development Libraries</a></h3>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-img">
+                        <img src="project2.jpg" alt="E-Commerce Mobile App">
                     </div>
-                    <div class="stat2">
-                        <h3><a
-                                href="https://www.sololearn.com/en/certificates/CT-H5O6UKN7">Sololearn
-                                CSS</a></h3>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Mobile App</h3>
+                        <p>A fully responsive mobile application for online shopping with secure payment processing and real-time inventory updates.</p>
+                        <div class="tech-stack">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/angela-kerubo/ecommerce-app" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="skills" class="skills">
-                <h2>Skills</h2>
-                <table>
-                    <tr>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
-                        </td>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg">
-                        </td>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg">
-                        </td>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/python/python-ar21.svg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" />
-                        </td>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/jquery/jquery-ar21.svg" />
-                        </td>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" />
-                        </td>
-                        <td>
-                            <img
-                                src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" />
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section id="contact" class="contact">
-                <h2>Let's Connect</h2>
-                <p>I'm currently looking for new opportunities, my inbox is
-                    always open. Whether you have a question or not, I'll try my
-                    best to get back to you!
-                    <br>Find me at <a
-                        href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=nkerubo.angela@gmail.com">nkerubo.angela@gmail.com</a></p>
-                <form action="https://formspree.io/f/xvoenezo"
-                    method="POST">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>@2024 All rights reserved</p>
-            <nav>
-                <a href="#header" class="smooth-scroll">Home</a>
-                <a href="#about" class="smooth-scroll">About Me</a>
-                <a href="#projects" class="smooth-scroll">My Work</a>
-                <a href="#contact" class="smooth-scroll">Contact Me</a>
-            </nav>
-            <a href="https://github.com/Angela-Kerubo" target="blank"><img
-                    align="center"
-                    src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg"
-                    alt="angela-kerubo" height="30" width="60" /></a>
-            <a href="https://www.linkedin.com/in/angela-kerubo/"
-                target="blank"><img align="center"
-                    src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-                    alt="angela-kerubo" height="30" width="60" /></a>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="project3.jpg" alt="Weather Dashboard">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>An interactive weather application that provides real-time forecasts, historical data, and personalized weather alerts.</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span>
+                            <span>OpenWeather API</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/angela-kerubo/weather-app" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-img">
+                        <img src="project4.jpg" alt="Data Visualization Tool">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Data Visualization Tool</h3>
+                        <p>A data analysis and visualization tool that helps businesses make informed decisions through interactive charts and reports.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>D3.js</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/angela-kerubo/data-viz" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>angelakerubo2@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/angela-kerubo/" target="_blank">angela-kerubo</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/angela-kerubo" target="_blank">angela-kerubo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Angela Kerubo. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/angela-kerubo" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/angela-kerubo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:angelakerubo2@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
 </html>
